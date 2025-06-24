@@ -1,0 +1,400 @@
+/* For information on how to create your own theme, please see:
+http://ionicframework.com/docs/theming/ */
+
+@import url(all.min.css);
+
+:root {
+	--ion-color-primary: #ED1E24;
+	--ion-color-primary-rgb: 237,30,36;
+	--ion-color-primary-contrast: #ffffff;
+	--ion-color-primary-contrast-rgb: 0,0,0;
+	--ion-color-primary-shade: #D6181F;
+	--ion-color-primary-tint: #ef353a;
+
+	--ion-color-secondary: #346186;
+	--ion-color-secondary-rgb: 52,97,134;
+	--ion-color-secondary-contrast: #ffffff;
+	--ion-color-secondary-contrast-rgb: 255,255,255;
+	--ion-color-secondary-shade: #4477A1;
+	--ion-color-secondary-tint: #487192;
+
+	--ion-color-tertiary: #1B3347;
+	--ion-color-tertiary-rgb: 52,97,134;
+	--ion-color-tertiary-contrast: #ffffff;
+	--ion-color-tertiary-contrast-rgb: 255,255,255;
+	--ion-color-tertiary-shade: #2e5576;
+	--ion-color-tertiary-tint: #487192;
+
+	--ion-color-success: #32936F;
+	--ion-color-success-rgb: 50,147,111;
+	--ion-color-success-contrast: #000000;
+	--ion-color-success-contrast-rgb: 0,0,0;
+	--ion-color-success-shade: #2c8162;
+	--ion-color-success-tint: #479e7d;
+
+	--ion-color-warning: #ffc409;
+	--ion-color-warning-rgb: 255,196,9;
+	--ion-color-warning-contrast: #000000;
+	--ion-color-warning-contrast-rgb: 0,0,0;
+	--ion-color-warning-shade: #e0ac08;
+	--ion-color-warning-tint: #ffca22;
+
+	--ion-color-danger: #ED1E24;
+	--ion-color-danger-rgb: 237,30,36;
+	--ion-color-danger-contrast: #000000;
+	--ion-color-danger-contrast-rgb: 0,0,0;
+	--ion-color-danger-shade: #d11a20;
+	--ion-color-danger-tint: #ef353a;
+
+	--ion-color-light: #f6f8fc;
+	--ion-color-light-rgb: 246,248,252;
+	--ion-color-light-contrast: #000000;
+	--ion-color-light-contrast-rgb: 0,0,0;
+	--ion-color-light-shade: #d8dade;
+	--ion-color-light-tint: #f7f9fc;
+
+	--ion-color-medium: #5f5f5f;
+	--ion-color-medium-rgb: 95,95,95;
+	--ion-color-medium-contrast: #ffffff;
+	--ion-color-medium-contrast-rgb: 255,255,255;
+	--ion-color-medium-shade: #545454;
+	--ion-color-medium-tint: #6f6f6f;
+
+	--ion-color-dark: #2f2f2f;
+	--ion-color-dark-rgb: 47,47,47;
+	--ion-color-dark-contrast: #ffffff;
+	--ion-color-dark-contrast-rgb: 255,255,255;
+	--ion-color-dark-shade: #292929;
+	--ion-color-dark-tint: #444444;
+
+	--ion-toolbar-background: #fff;
+
+	--base-font: 'Source Sans', sans-serif;
+	--ion-font-family: var(--base-font);
+	--ion-default-font: var(--base-font);
+	--radius: 7px;
+
+}
+
+@font-face {
+  font-family: 'Source Sans';
+  src: url('../assets/fonts/SourceSans3-VariableFont_wght.ttf') format("truetype-variations");
+  font-weight: 1 999;
+}
+
+ion-tabs{
+	padding-top: 68px;
+}
+
+.ios .safe-space {
+	padding-top: var(--ion-safe-area-top);
+}
+
+
+html.ios{
+	font-family: var(--ion-font-family) !important;
+	
+}
+
+/* For PWA */
+.container{
+ max-width: 85.375em;
+ width: 100%;
+ margin: 0 auto;
+ padding: 0 20px;
+}
+
+	.container--narrow{
+		max-width: 38.5625em;
+	}
+
+ion-app{
+  background-color: #f6f6f6;
+	font-smooth: always;
+	text-rendering: optimizeLegibility;
+}
+
+.ion-page{
+	justify-content: flex-start;
+}
+
+ion-content{
+	--offset-top: 0px;
+  --ion-background-color: #F6F6F6;
+}
+
+.spaero-page__message{
+	--border: #8CACC5;
+	--background: #8CACC5;
+	--color: rgba(27, 51, 71, 1);
+	border: 1px solid var(--border);
+	background-color: var(--background);
+	color: --color;
+	border-radius: 6px; 
+	padding: 15px;
+	margin: 20px 0;
+ }
+ 
+	 .spaero-page__message h2{
+		 font-weight: 600;
+		 font-size: 0.9375rem;
+		 display: flex;
+		 flex-direction: row;
+		 gap: 10px;
+		 align-items: center;
+		 margin: 0;
+	 }
+ 
+	 .spaero-page__message i{
+		 font-size: 1.875rem;
+	 }
+ 
+	 .spaero-page__message p{
+		 font-size: 0.875rem;
+		 margin-bottom: 0;
+		 color: rgba(27, 51, 71, 0.7);
+	 }
+ 
+	 .spaero-page__message--success{
+		 --border: rgba(50, 147, 111, 0.5);
+		 --background: rgba(50, 147, 111, 0.1);
+		 --color: rgba(27, 51, 71, 1);
+	 }
+ 
+		 .spaero-page__message--success i{
+			 color: rgba(50, 147, 111, 1);
+		 }
+ 
+	 .spaero-page__message--error{
+		 --border: rgba(214, 24, 31, 0.5);
+		 --background: rgba(214, 24, 31, 0.1);
+	 }
+ 
+		 .spaero-page__message--error i{
+			 color: rgba(214, 24, 31, 1);
+		 }
+ 
+ .spaero-form{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 15px;
+	width: 100%;
+ }
+
+ 	.spaero-form__title{
+		font-size: 0.9375rem;
+		font-weight: 600;
+		line-height: 1.2em;
+		margin: 0 0 10px 0;
+	}
+ 
+	.spaero-form__text{
+		font-size: 0.875rem;
+		color: var(--ion-color-tertiary);
+	}
+
+		.spaero-form__help-text{
+			font-size: 0.875rem;
+			color: var(--ion-color-tertiary);
+			opacity: 0.7;
+			margin-top: 5px;
+		}
+
+		.label-floating.sc-ion-input-ios-h .label-text-wrapper.sc-ion-input-ios{
+			transform: translateY(0) scale(1);
+		}
+
+	.spaero-form__block{
+		background-color: var(--ion-color-primary-contrast);
+		padding: 15px;
+		box-sizing: border-box;
+		margin-bottom: 15px;
+		border-radius: 4px;
+		width: 100%;
+	}
+
+	.spaero-page__form-sep{
+		display: block;
+		text-align: center;
+		font-size: 0.875rem;
+		color: var(--ion-color-tertiary);
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+		align-items: center;
+		justify-content: center;
+	}
+
+		.spaero-page__form-sep::before, .spaero-page__form-sep::after{
+			content: '';
+			width: 100%;
+			display: block;
+			margin: 0;
+			border-top: 1px solid rgba(0,0,0,0.07);
+		}
+
+	.spaero-form__input-with-button{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		gap: 5px;
+	}
+
+	.spaero-form__input-with-button ion-button{
+		align-self: flex-end;
+		margin: auto 0 15px;
+	}
+
+	.spaero-form__input-with-button ion-button i{
+		margin: 0;
+	}
+
+	.spaero-form__block .spaero-form__text{
+		opacity: 0.6;
+	}
+
+	.input-row{
+		display: flex;
+		flex-direction: row;
+		gap: 15px;
+		width: 100%;
+	}
+		
+	.btn-container{
+		padding-top: 20px;
+		position: sticky;
+		bottom: 20px;
+		width: 100%;
+  }
+
+  .spaero-card{
+	margin: 0;
+	font-family: var(--base-font);
+	background-color: #fff;
+	max-width: 655px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+  }
+  
+	.spaero-card__header{
+	  border-bottom: 1px solid rgba(27, 51, 71, 0.1);
+	  padding: 15px;
+	}
+  
+	  .spaero-card__header-match{
+		background-color: #8CACC5;
+		padding: 5px 15px;
+	  }
+  
+		.spaero-card__header-match--success{
+		  background-color: var(--ion-color-success);
+		}
+  
+		.spaero-card__header-match .spaero-card__title{
+		  font-weight: 400;
+		  color: #fff;
+		  display: flex;
+		  font-size: 1rem;
+		}
+  
+		  .spaero-card__header-match .spaero-card__title span{
+			font-weight: 600;
+		  }
+  
+	.spaero-card__title{
+	  font-size: 0.9375rem;
+	  display: flex;
+	  flex-direction: row;
+	  justify-content: space-between;
+	  line-height: 2em;
+	}
+  
+	.spaero-card__success, .spaero-card__danger, .spaero-card__info, .spaero-card__warning{
+	  font-size: 0.8125rem;
+	  font-weight: 600;
+	  letter-spacing: -0.24px;
+	  line-height: 1.2em;
+	  padding: 5px 10px;
+	  border-radius: 100px;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  gap: 6px;
+	}
+  
+	.spaero-card__success{
+	  color: rgba(50, 147, 111, 1);
+	  background-color: rgba(50, 147, 111, 0.1);
+	}
+  
+	.spaero-card__danger{
+	  background-color: rgba(237, 30, 36, 0.1);
+	  color: rgba(237, 30, 36, 1);
+	}
+  
+	.spaero-card__info{
+	  background-color:rgba(68, 119, 161, 0.1);
+	  color: rgba(68, 119, 161, 1);
+	  padding: 7px 10px;
+	}
+  
+	.spaero-card__warning{
+	  background-color: rgba(247, 152, 36, 0.1);
+	  color: #F79824;
+	}
+  
+	.spaero-card__buttons{
+	  align-items: center;
+	  gap: 10px;
+	  display: flex;
+	}
+  
+	  .spaero-card__buttons ion-button, .spaero-card__footer ion-button{
+		font-size: 0.8125rem;
+		margin: 0;
+		--border-radius: var(--radius);
+	  }
+  
+	  .spaero-card__buttons .button-outline::part(native){
+		border-color: rgba(27, 51, 71, 0.1);
+	  }
+  
+	.spaero-card__footer{
+	  border-top: 1px solid rgba(27, 51, 71, 0.1);
+	  display: flex;
+	  flex-direction: row;
+	  gap: 18px;
+	  padding: 15px;
+	  margin-top: auto;
+	}
+  
+	  .spaero-card__footer ion-button{
+		width: 100%;
+	  }
+  
+	.spaero-card__content{
+	  padding: 15px !important;
+	}
+  
+	  .spaero-card__content ion-label{
+		color: rgba(0, 0, 0, 0.5);
+		font-size: 0.8125rem;
+		margin: 0 0 7px;
+	  }
+  
+	  .spaero-card__content ion-label + p{
+		font-weight: 600;
+		color: #000;
+		font-size: 0.875rem;
+		margin: 0 0 12px;
+	  }
+  
+	  ion-grid {
+	  --ion-grid-padding: 0;
+	}
+  
+	  ion-row{
+		gap: 12px 0;
+	  }

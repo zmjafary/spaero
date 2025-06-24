@@ -1,0 +1,3 @@
+<template>
+  Support Ticket
+</template>
